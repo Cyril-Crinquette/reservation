@@ -1,26 +1,37 @@
 import { View, StyleSheet, Image, Text, TextInput, StatusBar } from 'react-native'
 import React from 'react'
 import CustomButton from './src/components/CustomButton'
+import  User from 'react-native-vector-icons/FontAwesome5'
+import  ClockCircle from 'react-native-vector-icons/AntDesign'
+import  IdCard from 'react-native-vector-icons/MaterialCommunityIcons'
+import  Lock from 'react-native-vector-icons/MaterialCommunityIcons'
+import  Info from 'react-native-vector-icons/Feather'
+import  Back from 'react-native-vector-icons/AntDesign'
+
 
 const App = () => {
   return (
     <View style={styles.container}>
+      <View style={{flexDirection: 'row', alignSelf:'flex-start'}}>
+        <Back name="back" size={30} color="#18167E" style={{alignSelf:'flex-start', marginLeft:10, marginTop:10}} />
+        <Text style={{alignSelf:'flex-start', marginLeft:10, marginTop:10, color:"#18167E"}}> Recommencer </Text>
+      </View>
       <View style={styles.title}>
-        <Text style={{fontWeight:'900'}}> Personnage </Text>
+      <User name="user-alt" size={20} color="#18167E" />
         <Text style={styles.titleText}> Identifiez vous</Text>
       </View>
       <View style={styles.form}>
         <View style={styles.input}>
-            <Text> Horloge </Text>
-            <TextInput value='Réservation du: 13 janvier 2022 de 8h à 10h' style={{justifyContent:'center', width:280, textAlign:'center', backgroundColor:'orange', borderRadius: 15, borderWidth:1, borderColor: 'black'}}/>
+          <ClockCircle name="clockcircle" size={30} color="#18167E" />
+          <TextInput value='Réservation du: 13 janvier 2022 de 8h à 10h' style={{marginLeft:10, justifyContent:'center', width:280, textAlign:'center', backgroundColor:'#F3CBC2', borderRadius: 15, borderWidth:1, borderColor: 'black'}}/>
         </View>
         <View style={styles.input}>
-          <Text> Identité </Text>
-          <TextInput placeholder='Sélectionnez votre nom et prénom' style={{justifyContent:'center', width:280, textAlign:'center', borderRadius: 15, borderWidth:1, borderColor: 'black'}}/>
+          <IdCard name="card-account-details" size={30} color="#18167E" />
+          <TextInput placeholder='Sélectionnez votre nom et prénom' style={{marginLeft:10, justifyContent:'center', width:280, textAlign:'center', borderRadius: 15, borderWidth:1, borderColor: 'black'}}/>
         </View>
         <View style={styles.input}>
-          <Text> Cadenas </Text>
-          <TextInput placeholder='Saisissez votre identifiant' style={{justifyContent:'center', width:280, textAlign:'center', borderRadius: 15, borderWidth:1, borderColor: 'black'}}/>
+          <Lock name="lock-check" size={30} color="#18167E" />
+          <TextInput placeholder='Saisissez votre identifiant' style={{marginLeft:10, justifyContent:'center', width:280, textAlign:'center', borderRadius: 15, borderWidth:1, borderColor: 'black'}}/>
         </View>
       </View>
       <View style={styles.access}>
@@ -38,7 +49,7 @@ const App = () => {
         <View style={{flex:1, flexDirection:'row'}}>
         </View>
         <View style={{flex:1, flexDirection:'column'}}>
-          <Text> Info </Text>
+          <Info name="info" size={30} color="#DD6D54" style={{alignSelf:'center'}} />
           <Text style={styles.warnText}> Un problème? Cliquez ici </Text>
         </View>
       </View>
@@ -63,7 +74,8 @@ const styles = StyleSheet.create({
   },
   titleText: {
     color: '#18167E',
-    fontWeight:'500'
+    fontWeight:'500',
+    marginLeft: 5
   },
   form: {
     flex: 3.5,
@@ -90,7 +102,7 @@ const styles = StyleSheet.create({
   warnText: {
     flex: 1,
     textAlign: 'center',
-    color: 'orange',
+    color: '#DD6D54',
     fontWeight:'450',
     fontSize: 10    
   }

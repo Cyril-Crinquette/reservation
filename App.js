@@ -1,24 +1,30 @@
 import { View, StyleSheet, Image, Text } from 'react-native'
 import React from 'react'
 import CustomButton from './src/components/CustomButton'
+import  Home from 'react-native-vector-icons/Entypo'
+import  Info from 'react-native-vector-icons/Feather'
+
 
 const App = () => {
   return (
     <View style={styles.container}>
       <View style={styles.title}>
-        <Text style={styles.titleText}> BIENVENUE DANS L'ESPACE RESERVATION</Text>
+        <Text style={styles.titleText}> Merci! L'opération a été effectuée avec succès</Text>
       </View>
       <View style={styles.img}>
-        <Image source={require('./src/img/welcome.png')} />
+        <Image source={require('./src/img/valid.png')} />
       </View>
       <View style={styles.access}>
-        <CustomButton style={styles.accessButton} title="-> Commencer" type="region" />
+        <Text style={{color:'#DD6D54', textAlign:'center', marginTop:30}}> Réservation du: 13 Janvier 2022 de 8h à 10h</Text>
+        <Text style={{color:'#DD6D54', textAlign:'center', fontSize:10}}>Un mail/sms de confirmation vous sera envoyé dans les prochaines minutes</Text> 
       </View>
       <View style={styles.warn}>
         <View style={{flex:1}}>
+        <Home name="home" size={30} color="#18167E" style={{ alignSelf:'center'}} />
+          <Text style={styles.titleText}> Retourner à l'accueil </Text>
         </View>
-        <Text> Warning</Text>
-        <Text style={styles.warnText}> Votre identifiant résident vous sera demandé lors de la validation </Text>
+        <Info name="info" size={30} color="#DD6D54" style={{alignSelf:'center'}} />
+        <Text style={styles.warnText}> Un problème? Cliquez ici</Text>
       </View>
     </View>
   )
@@ -61,9 +67,9 @@ const styles = StyleSheet.create({
   warnText: {
     flex: 1,
     textAlign: 'center',
-    color: 'orange',
-    fontWeight:'450',
-    fontSize: 10
+    color: '#DD6D54',
+    fontWeight:'450', 
+    fontSize: 10    
   }
 })
-
+  

@@ -1,12 +1,18 @@
-import { View, StyleSheet, Image, Text } from 'react-native'
+import { View, StyleSheet, Image, Text, Dimensions } from 'react-native'
 import React from 'react'
 import CustomButton from './src/components/CustomButton'
+import  Icon from 'react-native-vector-icons/Ionicons'
+import  Acon from 'react-native-vector-icons/FontAwesome'
+import  Back from 'react-native-vector-icons/AntDesign'
+
 
 const App = () => {
   return (
     <View style={styles.container}>
+      <Back name="back" size={30} color="#18167E" style={{alignSelf:'flex-start', marginLeft:10, marginTop:10}} />
       <View style={styles.title}>
         <Text style={styles.titleText}> BIENVENUE DANS L'ESPACE RESERVATION</Text>
+        <Acon name="calendar-check-o" size={30} color="#18167E" />
       </View>
       <View style={styles.img}>
         <Image source={require('./src/img/welcome.png')} />
@@ -17,7 +23,9 @@ const App = () => {
       <View style={styles.warn}>
         <View style={{flex:1}}>
         </View>
-        <Text> Warning</Text>
+        <View style={{alignItems:'center'}}>
+          <Icon name="md-warning" size={30} color="#DD6D54" />
+        </View> 
         <Text style={styles.warnText}> Votre identifiant résident vous sera demandé lors de la validation </Text>
       </View>
     </View>
@@ -40,7 +48,8 @@ const styles = StyleSheet.create({
   },
   titleText: {
     color: '#18167E',
-    fontWeight:'500'
+    fontWeight:'500',
+    marginBottom: 10
   },
   img: {
     flex: 2,
@@ -60,8 +69,9 @@ const styles = StyleSheet.create({
   },
   warnText: {
     flex: 1,
+    flexDirection: 'row',
     textAlign: 'center',
-    color: 'orange',
+    color: '#DD6D54',
     fontWeight:'450',
     fontSize: 10
   }

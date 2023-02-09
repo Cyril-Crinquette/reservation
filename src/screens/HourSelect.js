@@ -3,6 +3,10 @@ import { View, StyleSheet, Image, Text } from 'react-native'
 import React from 'react'
 import CustomButton from './src/components/CustomButton'
 import SelectButton from './src/components/SelectButton'
+import  Icon from 'react-native-vector-icons/Ionicons'
+import Morning from 'react-native-vector-icons/MaterialCommunityIcons'
+import Afternoon from 'react-native-vector-icons/MaterialCommunityIcons'
+
 
 const App = () => {
   return (
@@ -10,43 +14,43 @@ const App = () => {
       <View style={{ flex: 0.75 }}>
         <View style={{ backgroundColor: '#FFF', flex: 1, flexDirection:'row', alignItems:'center' }}>
           <Text style={{ marginRight:10}}>
-            Horloge
+          <Morning name="clock-time-eight-outline" size={30} color="#18167E" />
           </Text>
-          <Text style={{ color:'#blue'}}>
-            Matin: 8h - 13h
+          <Text style={{ color:'#18167E', fontWeight:'bold'}}>
+          Matin: 08h - 13h
           </Text>
         </View>
         <StatusBar style="auto" />
       </View>
       <View style={{ flex: 5, flexDirection: 'column', backgroundColor:'#E1E4FD'}}>
         <View style={{flex: 1, flexDirection: 'row', alignItems:'center'}}>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
         </View>
         <View style={{flex: 1, flexDirection: 'row'}}>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
         </View>
         <View style={{flex: 1, flexDirection: 'row'}}>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
         </View>
       </View>
       <View style={{ flex: 0.75 }}>
         <View style={{ backgroundColor: '#FFF', flex: 1, flexDirection:'row', alignItems:'center' }}>
           <Text style={{marginRight:10 }}>
-            Horloge
+            <Afternoon name="clock-time-four-outline" size={30} color="#18167E" />
           </Text>
-          <Text style={{ color:'#red'}}>
+          <Text style={{ color:'#18167E',fontWeight:'bold' }}>
             Après-midi: 13h - 18h
           </Text>
         </View>
@@ -54,25 +58,25 @@ const App = () => {
       </View>
       <View style={{ flex: 5, flexDirection: 'column', alignItems:'center', justifyContent:'center', backgroundColor:'#E1E4FD' }}>
         <View style={{flex: 1, flexDirection: 'row', alignItems:'center'}}>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
         </View>
         <View style={{flex: 1, flexDirection: 'row'}}>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
         </View>
           <View style={{flex: 1, flexDirection: 'row'}}>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
-          <SelectButton style={{alignItems:'center', justifyContent:'center', marginLeft:50}} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
+          <SelectButton style={styles.button} title="Heure" type="region"/>
         </View>
       </View>
       <View style={{ flex: 3 }}>
@@ -84,9 +88,9 @@ const App = () => {
             <CustomButton style={{alignItems:'center', justifyContent:'center'}} title="Valider et continuer" type="region" />
           </View>
         </View>
-        <View style={{ backgroundColor: '#FFF', flex: 0.4, flexDirection:'row', justifyContent:'center', alignItems:'center' }}>
-          <Text> Warning </Text>
-          <Text style={{ fontSize:10, fontWeight:'450', color:'orange'}}>
+        <View style={{ backgroundColor: '#FFF', flex: 0.4, justifyContent:'center', alignItems:'center' }}>
+          <Icon name="md-warning" size={30} color="#DD6D54" /> 
+          <Text style={{ fontSize:10, fontWeight:'450', color:'#DD6D54'}}>
             Vous pouvez réserver jusqu'à 3 heures consécutives en fonction des créneaux disponibles
           </Text>
         </View> 
@@ -106,5 +110,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     fontWeight:'450',    
   },
+  button: {
+    alignItems:'center',
+    justifyContent:'center',
+    marginLeft:50
+  }
+  
 })
 
