@@ -13,24 +13,24 @@ const App = () => {
   return (
     <View style={styles.container}>
       <View style={{flexDirection: 'row', alignSelf:'flex-start'}}>
-        <Back name="back" size={30} color="#18167E" style={{alignSelf:'flex-start', marginLeft:10, marginTop:10}} />
-        <Text style={{alignSelf:'flex-start', marginLeft:10, marginTop:10, color:"#18167E"}}> Recommencer </Text>
+        <Back name="back" size={50} color="#18167E" style={{alignSelf:'flex-start', marginLeft:10, marginTop:10}} />
+        <Text style={{alignSelf:'flex-start', marginLeft:10, marginTop:10, color:"#18167E", fontSize:30}}> Recommencer </Text>
       </View>
       <View style={styles.title}>
-      <User name="user-alt" size={20} color="#18167E" />
+      <User name="user-alt" size={50} color="#18167E" />
         <Text style={styles.titleText}> Identifiez vous</Text>
       </View>
       <View style={styles.form}>
         <View style={styles.input}>
-          <ClockCircle name="clockcircle" size={30} color="#18167E" />
+          <ClockCircle name="clockcircle" size={50} color="#18167E" />
           <TextInput value='Réservation du: 13 janvier 2022 de 8h à 10h' style={{marginLeft:10, justifyContent:'center', width:280, textAlign:'center', backgroundColor:'#F3CBC2', borderRadius: 15, borderWidth:1, borderColor: 'black'}}/>
         </View>
         <View style={styles.input}>
-          <IdCard name="card-account-details" size={30} color="#18167E" />
+          <IdCard name="card-account-details" size={50} color="#18167E" />
           <TextInput placeholder='Sélectionnez votre nom et prénom' style={{marginLeft:10, justifyContent:'center', width:280, textAlign:'center', borderRadius: 15, borderWidth:1, borderColor: 'black'}}/>
         </View>
         <View style={styles.input}>
-          <Lock name="lock-check" size={30} color="#18167E" />
+          <Lock name="lock-check" size={50} color="#18167E" />
           <TextInput placeholder='Saisissez votre identifiant' style={{marginLeft:10, justifyContent:'center', width:280, textAlign:'center', borderRadius: 15, borderWidth:1, borderColor: 'black'}}/>
         </View>
       </View>
@@ -75,7 +75,9 @@ const styles = StyleSheet.create({
   titleText: {
     color: '#18167E',
     fontWeight:'500',
-    marginLeft: 5
+    marginLeft: 5,
+    fontSize: 35
+
   },
   form: {
     flex: 3.5,
@@ -104,7 +106,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#DD6D54',
     fontWeight:'450',
-    fontSize: 10    
+    fontSize: 20    
   }
 })
 

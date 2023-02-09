@@ -2,7 +2,16 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
 import React from 'react'
 import colors from '../utils/colors'
 
-const CustomButton = (props) => {
+const data = [
+    { key: 'Item 1' },
+    { key: 'Item 2' },
+    { key: 'Item 3' },
+    { key: 'Item 4' },
+    { key: 'Item 5' },
+    { key: 'Item 6' }
+  ]
+
+const SelectButton = (props) => {
     const { title, type } = props
     return (
     <TouchableOpacity
@@ -11,9 +20,10 @@ const CustomButton = (props) => {
             justifyContent:'center',
             alignItems: 'center',
             borderRadius: 5,
-            width: 70,
-            height: 30
+            width: 120,
+            height: 80
         }}
+        onPress={() => handlePress(item)}
     >
         <Text
             style={{
@@ -28,4 +38,4 @@ const CustomButton = (props) => {
     )
 }
 
-export default CustomButton
+export default SelectButton

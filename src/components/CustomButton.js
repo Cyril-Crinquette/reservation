@@ -11,8 +11,8 @@ const CustomButton = (props) => {
             alignItems: 'center',
             justifyContent:'center',
             borderRadius: 5,
-            width: 120,
-            height: 40
+            width: 180,
+            height: 60,
         }}
     >
         <Text

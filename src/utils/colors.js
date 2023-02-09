@@ -34,7 +34,6 @@ const colors = {
     region: {
         backgroundColor: '#18167E',
         color: '#FFF'
-        
     }
 }
 

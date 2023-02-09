@@ -42,7 +42,8 @@ const styles = StyleSheet.create({
   },
   titleText: {
     color: '#18167E',
-    fontWeight:'500'
+    fontWeight:'500',
+    fontSize: 30,
   },
   img: {
     flex: 2,

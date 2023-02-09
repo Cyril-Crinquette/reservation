@@ -4,16 +4,31 @@ import CustomButton from './src/components/CustomButton'
 import  Icon from 'react-native-vector-icons/Ionicons'
 import  Acon from 'react-native-vector-icons/FontAwesome'
 import  Back from 'react-native-vector-icons/AntDesign'
+import WelcomeCarousel from './src/components/WelcomeCarousel' 
 
+
+// constructor (props) = () => {
+//   super(props)
+//   this.state = {
+//     didacticiel: [
+//       'https://placekitten.com/408/287',
+//       'https://placekitten.com/408/287',
+//       'https://placekitten.com/408/287'
+//     ]
+//   }
+// }
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Back name="back" size={30} color="#18167E" style={{alignSelf:'flex-start', marginLeft:10, marginTop:10}} />
+      <Back name="back" size={50} color="#18167E" style={{alignSelf:'flex-start', marginLeft:10, marginTop:10}} />
       <View style={styles.title}>
         <Text style={styles.titleText}> BIENVENUE DANS L'ESPACE RESERVATION</Text>
-        <Acon name="calendar-check-o" size={30} color="#18167E" />
+        <Acon name="calendar-check-o" size={50} color="#18167E" />
       </View>
+      {/* <View style={styles.carousel}>
+        <WelcomeCarousel />
+      </View> */}
       <View style={styles.img}>
         <Image source={require('./src/img/welcome.png')} />
       </View>
@@ -49,19 +64,23 @@ const styles = StyleSheet.create({
   titleText: {
     color: '#18167E',
     fontWeight:'500',
-    marginBottom: 10
+    marginBottom: 10,
+    fontSize: 35,
+
   },
   img: {
     flex: 2,
+    alignSelf: 'center',
   },
   access: {
     flex: 1,
   },
-  accessButton: {
-    padding: 15,
-    width: 15,
-    backgroundColor: 'red'
-  },
+  // accessButton: {
+  //   padding: 15,
+  //   width: 35,
+  //   backgroundColor: 'red', 
+  //   fontSize: 50
+  // },
   warn: {
     flex: 1,
     paddingLeft: 10,
@@ -73,7 +92,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#DD6D54',
     fontWeight:'450',
-    fontSize: 10
+    fontSize: 20
   }
 })
 

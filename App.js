@@ -15,15 +15,15 @@ const App = () => {
         <Image source={require('./src/img/valid.png')} />
       </View>
       <View style={styles.access}>
-        <Text style={{color:'#DD6D54', textAlign:'center', marginTop:30}}> Réservation du: 13 Janvier 2022 de 8h à 10h</Text>
-        <Text style={{color:'#DD6D54', textAlign:'center', fontSize:10}}>Un mail/sms de confirmation vous sera envoyé dans les prochaines minutes</Text> 
+        <Text style={{color:'#DD6D54', textAlign:'center', fontSize:30, marginTop:30}}> Réservation du: 13 Janvier 2022 de 8h à 10h</Text>
+        <Text style={{color:'#DD6D54', textAlign:'center', fontSize:20}}>Un mail/sms de confirmation vous sera envoyé dans les prochaines minutes</Text> 
       </View>
       <View style={styles.warn}>
         <View style={{flex:1}}>
-        <Home name="home" size={30} color="#18167E" style={{ alignSelf:'center'}} />
-          <Text style={styles.titleText}> Retourner à l'accueil </Text>
+        <Home name="home" size={50} color="#18167E" style={{ alignSelf:'center'}} />
+          <Text style={styles.homeText}> Retourner à l'accueil </Text>
         </View>
-        <Info name="info" size={30} color="#DD6D54" style={{alignSelf:'center'}} />
+        <Info name="info" size={30} color="#DD6D54" style={{alignSelf:'center', marginTop:50}} />
         <Text style={styles.warnText}> Un problème? Cliquez ici</Text>
       </View>
     </View>
@@ -46,7 +46,13 @@ const styles = StyleSheet.create({
   },
   titleText: {
     color: '#18167E',
-    fontWeight:'500'
+    fontWeight:'500',
+    fontSize:35
+  },
+  homeText: {
+    color: '#18167E',
+    fontWeight:'500',
+    fontSize:25
   },
   img: {
     flex: 2,
@@ -69,7 +75,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#DD6D54',
     fontWeight:'450', 
-    fontSize: 10    
+    fontSize: 20    
   }
 })
 
