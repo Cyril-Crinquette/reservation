@@ -22,15 +22,15 @@ const App = () => {
       </View>
       <View style={styles.form}>
         <View style={styles.input}>
-          <ClockCircle name="clockcircle" size={50} color="#18167E" />
+          <ClockCircle name="clockcircle" size={45} color="#18167E" />
           <TextInput value='Réservation du: 13 janvier 2022 de 8h à 10h' style={{marginLeft:10, justifyContent:'center', width:280, textAlign:'center', backgroundColor:'#F3CBC2', borderRadius: 15, borderWidth:1, borderColor: 'black'}}/>
         </View>
         <View style={styles.input}>
-          <IdCard name="card-account-details" size={50} color="#18167E" />
+          <IdCard name="card-account-details" size={45} color="#18167E" />
           <TextInput placeholder='Sélectionnez votre nom et prénom' style={{marginLeft:10, justifyContent:'center', width:280, textAlign:'center', borderRadius: 15, borderWidth:1, borderColor: 'black'}}/>
         </View>
         <View style={styles.input}>
-          <Lock name="lock-check" size={50} color="#18167E" />
+          <Lock name="lock-check" size={45} color="#18167E" />
           <TextInput placeholder='Saisissez votre identifiant' style={{marginLeft:10, justifyContent:'center', width:280, textAlign:'center', borderRadius: 15, borderWidth:1, borderColor: 'black'}}/>
         </View>
       </View>

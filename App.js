@@ -15,7 +15,7 @@ const App = () => {
         <Image source={require('./src/img/valid.png')} />
       </View>
       <View style={styles.access}>
-        <Text style={{color:'#DD6D54', textAlign:'center', fontSize:30, marginTop:30}}> Réservation du: 13 Janvier 2022 de 8h à 10h</Text>
+        <Text style={{color:'#DD6D54', textAlign:'center', marginTop:10, fontSize:25, fontWeight:'bold'}}> Réservation du: 13 Janvier 2022 de 08h00 à 10h00</Text>
         <Text style={{color:'#DD6D54', textAlign:'center', fontSize:20}}>Un mail/sms de confirmation vous sera envoyé dans les prochaines minutes</Text> 
       </View>
       <View style={styles.warn}>
@@ -47,12 +47,12 @@ const styles = StyleSheet.create({
   titleText: {
     color: '#18167E',
     fontWeight:'500',
-    fontSize:35
+    fontSize: 35,
   },
   homeText: {
     color: '#18167E',
     fontWeight:'500',
-    fontSize:25
+    fontSize: 25,
   },
   img: {
     flex: 2,
